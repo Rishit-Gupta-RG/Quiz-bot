@@ -100,7 +100,6 @@ from botutils import (getTeam, getAuthorAndName, getTeamDistribution,
         getTeamChannels, unassignTeams, deleteFiles, convertToImages, getMostFrequentSlide, previewSlide,
         updateSlides, saveSlideState, recoverSlideState, getAuthorizedServer, getAuthorizedUser)
 
-from tabulate import tabulate
 from discord.ext import commands
 import discord
 
