@@ -92,6 +92,7 @@ import os
 import json
 import asyncio
 import time
+load_dotenv()
 from itertools import groupby
 
 
@@ -135,8 +136,8 @@ https://discordapp.com/developers/applications : ")
     guildId = input("Enter Guild (Server) ID (right click on the server\
 icon if you have enabled developer appearance): ") 
     with open('.env', 'w+') as envfile:
-        envfile.write('TOKEN='+token+'\n')
-        envfile.write('GUILD='+guildId+'\n')
+        envfile.write('k='+token+'\n')
+        envfile.write('Gk='+guildId+'\n')
 except:
     print("An unknown exception occured. There might be a problem with the \
 .env file or its contents. Try deleting the file and running \
@@ -1563,4 +1564,4 @@ def save():
     #for key in state:
     #    print(key, state[key])
 
-bot.run("TOKEN")
+bot.run(os.getenv("TOKEN"))
