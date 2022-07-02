@@ -1564,4 +1564,4 @@ def save():
     #for key in state:
     #    print(key, state[key])
 
-bot.run(token)
+bot.run("TOKEN")
